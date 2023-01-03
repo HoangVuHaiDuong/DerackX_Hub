@@ -1,1 +1,1 @@
-djtmemayphonggayx12c
+_G.Hub_Key = "djtmemayphonggayx12c"
