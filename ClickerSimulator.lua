@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Derack16X Hub | ⚡Clicker Simulator!", HidePremium = false, SaveConfig = true, ConfigFolder = "ConfigClicker", IntroEnabled = true, IntroText = "DerackX Hub"})
+local Window = OrionLib:MakeWindow({Name = "DerackX Hub | ⚡Clicker Simulator!", HidePremium = false, SaveConfig = true, ConfigFolder = "ConfigClicker", IntroEnabled = true, IntroText = "DerackX Hub"})
 
 --Values
 _G.autoTap = true
