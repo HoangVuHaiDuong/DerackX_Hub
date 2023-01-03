@@ -164,3 +164,5 @@ Tab1:AddButton({
         end
   	end    
 })
+
+OrionLib:Init()
