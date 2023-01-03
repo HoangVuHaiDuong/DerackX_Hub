@@ -1,5 +1,3 @@
-if game.PlaceId == 8750997647 then
-
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Derack16X Hub | ⚡Clicker Simulator!", HidePremium = false, SaveConfig = true, ConfigFolder = "ConfigClicker", IntroEnabled = true, IntroText = "DerackX Hub"})
 
@@ -97,5 +95,4 @@ updrageTab:AddToggle({
 
 --eggs
 
-end
 OrionLib:Init()
