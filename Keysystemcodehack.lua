@@ -2,7 +2,7 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 local Player = game.Players.LocalPlayer
 local KeyWindow = OrionLib:MakeWindow({Name = "Derack16X Hub", HidePremium = false, SaveConfig = true, IntroEnabled = false, IntroText = "Key System"})
 
-local keyhub = loadstring(game:HttpGet("https://raw.githubusercontent.com/HoangVuHaiDuong/DerackX_Hub/main/Hub_key.lua",true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/HoangVuHaiDuong/DerackX_Hub/main/Hub_key.lua",true))()
 
 OrionLib:MakeNotification({
 	Name = "Starting!",
@@ -24,7 +24,7 @@ end
 function CheckKey()
     if _G.Hub_Key == KeyInput then
         Destroy()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/HoangVuHaiDuong/DerackX-Hub/main/Tapping_Legend_X.lua?token=GHSAT0AAAAAAB5AGLQZIORKCRMYXK76TMOKY5UHZEA",true))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/HoangVuHaiDuong/DerackX_Hub/main/ClickerSimulator.lua",true))()
         CorrectKeyNotification()
     else
         IncorrectKeyNotification()
