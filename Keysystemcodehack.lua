@@ -1,0 +1,72 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Player = game.Players.LocalPlayer
+local KeyWindow = OrionLib:MakeWindow({Name = "Derack16X Hub", HidePremium = false, SaveConfig = true, IntroEnabled = false, IntroText = "Key System"})
+
+local keyhub = loadstring(game:HttpGet("https://raw.githubusercontent.com/HoangVuHaiDuong/DerackX-Hub/main/DerackX_keyhub.lua?token=GHSAT0AAAAAAB5AGLQYPOCRENEZEPYKAVS6Y5UHMBQ",true))()
+
+OrionLib:MakeNotification({
+	Name = "Starting!",
+	Content = "Welcom "..Player.Name.." to DerackX Hub",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+--value
+
+getgenv().KeyInput = "string"
+
+--funcion"
+
+function Destroy()
+    game:GetService("CoreGui").OrionLib:Destroy()
+end
+
+function CheckKey()
+    if _G.Hub_Key == KeyInput then
+        Destroy()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/HoangVuHaiDuong/DerackX-Hub/main/Tapping_Legend_X.lua?token=GHSAT0AAAAAAB5AGLQZIORKCRMYXK76TMOKY5UHZEA",true))()
+        CorrectKeyNotification()
+    else
+        IncorrectKeyNotification()
+    end
+end
+
+function CorrectKeyNotification()
+    OrionLib:MakeNotification({
+        Name = "Correct Key!",
+        Content = "You Have Entered The Correct Key!",
+        Image = "rbxassetid://4483345998",
+        Time = 5
+    })
+end
+
+function IncorrectKeyNotification()
+    OrionLib:MakeNotification({
+        Name = "InCorrect Key!",
+        Content = "Valid Key!",
+        Image = "rbxassetid://4483345998",
+        Time = 5
+    })
+end
+
+local Tab1 = KeyWindow:MakeTab({
+	Name = "Key",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab1:AddTextbox({
+	Name = "Enter Key",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+		KeyInput = Value
+	end	  
+})
+
+Tab1:AddButton({
+	Name = "Check Key!",
+	Callback = function()
+        CheckKey()
+  	end    
+})
